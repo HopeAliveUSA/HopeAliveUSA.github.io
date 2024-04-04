@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Alive USA</title>
+     <link rel="stylesheet" href="./scripts/styles.css"> 
+     <script src="./scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./images/hopealive.jpg" alt="Hope Alive USA Logo">
+        <nav>
+            <ul>
+                <li><a href="#" onclick= "reloadIndex()">Home</a>
+                <li><a href="#" onclick= "about()">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="#">Resource 1</a>
+                        <a href="#">Resource 2</a>
+                        <a href="#">Resource 3</a>
+                        <a href="#">Resource 4</a>
+                        <a href="#">Resource 5</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Community</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="membership()">Members and Membership</a>
+                        <a href="#" onclick="loadVideosPage()">Videos</a>
+                        <a href="#" onclick="involved()">Get Involved</a>
+                        <a href="#" onclick="donation()">Donate</a>
+                    </div>
+                </li>
+                <li><a href="#" onclick= "contact()">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div>
+            <img src="./images/half1.png" alt="Image1" width="300px" height="300px">
+            <h3>Content 1</h3>
+            <p>Description 1</p>
+        </div>
+        <div>
+            <img src="./images/half2.png" alt="Image2" width="300px" height="300px">
+            <h3>Content 2</h3>
+            <p>Description 2</p>
+        </div>
+        <div>
+            <img src="./images/half3.png" alt="Image3" width="300px" height="300px">
+            <h3>Content 3</h3>
+            <p>Description 3</p>
+        </div>
+        <div>
+            <img src="./images/half4.png" alt="Image4" width="300px" height="300px">
+            <h3>Content 4</h3>
+            <p>Description 4</p>
+        </div>
+        <div>
+            <img src="./images/half5.png" alt="Image5" width="300px" height="300px">
+            <h3>Content 5</h3>
+            <p>Description 5</p>
+        </div>
+        <div>
+            <img src="./images/half7.png" alt="Image6" width="300px" height="300px">
+            <h3>Content 6</h3>
+            <p>Description 6</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hope Alive USA. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        // Redirect to the various html pages
+    function reloadIndex() {
+        window.location.href = 'index.html';
+    }
+
+  
+    function loadVideosPage() {
+        window.location.href = "./templates/videos.html"; 
+   }
+  
+    function donation() {
+        window.location.href = "./templates/donate.html"; 
+    }  
+
+   function involved() {
+        window.location.href = "./templates/getinvolved.html"; 
+    }  
+
+    function membership() {
+        window.location.href = "./templates/members.html"; 
+    }  
+    
+     function about() {
+        window.location.href = "./templates/about.html"; 
+    }  
+
+     function contact() {
+       window.location.href = "./templates/contact.html";
+    }
+    </script>
+   
+</body>
+</html>
